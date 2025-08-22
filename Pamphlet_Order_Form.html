@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+     <meta charset="UTF-8">
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pamphlet Ordering Interface</title>
+
+   </head>
+
+     <body> 
+
+        <header>
+         <h2>Please fill out the form below to order a <mark style="background-color: aquamarine;">Custom</mark> Pamphlet.</h2>
+         <hr>
+        </header>
+
+        <form action="Pamphlet_Order.php" method ="post" enctype="multipart/form-data">
+            <label for="Name">Full Name:</label>
+            <input type="text" id="Name" placeholder="Fill your full name!" pattern="[a-zA-Z]{3,15} [a-zA-Z]{4,20}">
+
+            <br><label for="email">Contact email:</label>
+            <input type="email" id="email" placeholder="email@email.com"><br>
+
+            <label for="Preferred Deadline">Preferred Deadline:</label>
+            <input type="date" id="Preferred Deadline"><br><br>
+
+            <label for="Design_Need">Design Description:</label>
+            <textarea id="Design_Need" rows="3", cols="25" placeholder="You may describe the design you want here! OR any specific requests."></textarea>
+                 
+            <br><br><label for="Gift">Want Free Gift Hampers? :</label>
+               <select id="Gift">
+                  <option value="-">-</option>
+                  <option value="Y">YES</option>
+                  <option value="n">no</option>
+               </select><br>
+                 
+            
+             <br><input type="reset">
+             <input type="submit">
+        </form>
+         
+       <footer>
+         <hr>
+          THANK YOU for choosing us! <mark>Enjoy!</mark> :)
+        </footer>
+
+     </body>
+
+
+</html>
