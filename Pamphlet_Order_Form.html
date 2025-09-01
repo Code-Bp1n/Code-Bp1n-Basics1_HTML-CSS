@@ -8,15 +8,19 @@
 
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pamphlet Ordering Interface</title>
+      <link rel="stylesheet" href="Form.css">  
 
    </head>
 
      <body> 
 
-        <header>
-         <h2>Please fill out the form below to order a <mark style="background-color: aquamarine;">Custom</mark> Pamphlet.</h2>
-         <hr>
-        </header>
+        <div class="form">
+
+            <main>
+               
+               <h2>Please fill out the form below to order a <mark style="background-color: rgb(239, 196, 139);" >Custom Pamphlet.</mark></h2>
+                 <hr>
+            </main>
 
         <form action="Pamphlet_Order.php" method ="post" enctype="multipart/form-data">
             <label for="Name">Full Name:</label>
@@ -42,7 +46,7 @@
              <br><input type="reset">
              <input type="submit">
         </form>
-         
+        </div>
        <footer>
          <hr>
           THANK YOU for choosing us! <mark>Enjoy!</mark> :)
